@@ -2,14 +2,18 @@
 {% block content %}
 	<div align="center">
   <h1>sign up page</h1>
-    	<form action="{{url_for('sign up')}}">
-  			Your Nickname: <input name="Your Nickname" onfocus="if (this.value=='Your Nickname') this.value = ''" type="text" value="Your Nickname" maxlength="50"> <br><br>
-  			<div class="lol"> Password: <input type="password" name="passowrd"> <br><br> </div>
-  			Re-enter Password: <input type="password" name="passowrd2"> <br><br>
-        songs type: <input type="text" name="songs type">        
+    		<form action="{{url_for('sign up')}}" 	method="POST">
+  			Your Nickname: <input type=text name="nickname"><br><br>
+  			<!--<input name="Your Nickname" onfocus="if (this.value=='Your Nickname') this.value = ''" type="text" value="Your Nickname" maxlength="50"> <br><br>
+  			<div class="lol">-->
 
-  			</input><br><br>
-    		<input type="submit" value="Send" >
-    	</form>
+  			Password: <input type=password name="passowrd"> <br><br>
+  			Re-enter Password: <input type=password name="password2"> <br><br>
+        	songs type: <input type=text name="songs type">        
+
+  			<br><br>
+    		<input type="submit" value="Send">
+    		</form>
+    		</div>
   	</div>
 {% endblock %}
