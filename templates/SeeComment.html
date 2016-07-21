@@ -4,9 +4,19 @@
 	<title>See Comments</title>
 </head>
 <body>
-<center>
+<div align="center">
 <br><br><br><br>
-	<h1>comment on this story:</h1>
-</center>
+	<h1>comments on this story:</h1>
+
+{%for c in comments%}
+
+<div>
+
+<p>
+{{c.comments}}
+</p>
+</div>
+{%end for%}
+</div>
 </body>
 </html>
