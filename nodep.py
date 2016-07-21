@@ -6,54 +6,57 @@ app = Flask(__name__)
 #Homepage
 @app.route('/')
 def homepage():
-	pass 
-	return render_template(#here we put the homepage.html)
+	
+	return 'Hi' 
+	#return render_template(#here we put the homepage.html)
 
 #signup page
 
 @app.route('/about')
 def about():
-	pass
-	return render_template(#here we put about.html)
+	return 'about'
+	#return render_template(#here we put about.html)
 
 #signin page
 
 @app.route('/signin')
 def signin():
-	pass
-	return render_template(#here we put signin.html)
+	return 'signin'
+	#return render_template(#here we put signin.html)
 
 #submit page
 
 @app.route('/submit')
 def submit():
+
 	return render_template('submit.html')
 
 #stories page
 
 @app.route('/stories')
 def stories():
-	pass
-	return render_template(#here we put stories)
+	return 'stories'
+	#return render_template(#here we put stories)
 
 
 #a single story page
 @app.route('story/<id>')
 def storyid(id):
-	pass
-	return render_template(#singlestory.html, id=id)
+	return 'singlestory'
+#	return render_template(#singlestory.html, id=id)
 
 #comment page (sending a comment)
 
 
 @app.route('/comment')
 def stories():
-	return render_template(#comment.html)
+	return 'comment'
+#	return render_template(#comment.html)
 
 #error page (404)
 @app.errorhandler(404)
 def page_not_found(e):
-	pass
+	return 'sorry, 404'
 	return render_template(#'404.html')
 
 if __name__ = '__main__':
