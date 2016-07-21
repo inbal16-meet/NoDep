@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+	<div align="center">
+  <h1>sign up page</h1>
+    	<form action="{{url_for('sign up')}}">
+  			Your Nickname: <input name="Your Nickname" onfocus="if (this.value=='Your Nickname') this.value = ''" type="text" value="Your Nickname" maxlength="50"> <br><br>
+  			<div class="lol"> Password: <input type="password" name="passowrd"> <br><br> </div>
+  			Re-enter Password: <input type="password" name="passowrd2"> <br><br>
+        songs type: <input type="text" name="songs type">        
+
+  			</input><br><br>
+    		<input type="submit" value="Send" >
+    	</form>
+  	</div>
+{% endblock %}

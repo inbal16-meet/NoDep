@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+	{% block content %}
+		<div align="center">
+    		<form action="{{url_for('sign up')}}">
+  				Your Nickname: <input type="text" name="Nickname" maxlength="20"> <br><br>
+  				<div class="lol"> Password: <input type="text" name="passowrd"> <br><br> </div>
+  					 
+
+  				</input><br><br>
+    			<input type="submit" value="Send" >
+    		</form>
+  		</div>
+	{% endblock %}
