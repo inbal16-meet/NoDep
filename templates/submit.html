@@ -1,17 +1,21 @@
 
 <html>
+
+<body>
 {% extends "base.html" %} 
 {% block title %} Submit {% endblock %}
 {% block content %}
-<body>
-<br><br> What's bothering you? <br>
- <form action= #????? >
-	
-  <TEXTAREA Name="content" ROWS=10 COLS=30 value="what's bothering you?" ></TEXTAREA>
-  <br>
-  <input type="submit" value="Submit">
-</form> 
+<center>
+<br><br><br>
+<br><br> What's bothering you? <br><br>
 
+ <form action= #????? >
+  <TEXTAREA Name="content" ROWS=10 COLS=50 value="Write your story here">
+ </TEXTAREA>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+</center> 
+{%endblock%}
 </body>
-{% endblock %}
 </html>
