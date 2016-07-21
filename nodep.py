@@ -1,12 +1,11 @@
-
 from flask import Flask, render_template
+
 app = Flask(__name__)
 
 
 #Homepage
 @app.route('/')
 def homepage():
-	
 	return 'Hi' 
 	#return render_template(#here we put the homepage.html)
 
@@ -26,10 +25,16 @@ def signin():
 
 #submit page
 
+
+@app.route('/signup')
+def signin():
+	#return render_template("sign_up_page.html")
+
+
+
 @app.route('/submit')
 def submit():
-
-	return render_template('submit.html')
+	#return render_template('submit.html')
 
 #stories page
 
@@ -57,7 +62,7 @@ def stories():
 @app.errorhandler(404)
 def page_not_found(e):
 	return 'sorry, 404'
-	return render_template(#'404.html')
+	#return render_template(#'404.html')
 
-if __name__ = '__main__':
+if __name__ == '__main__':
 	app.run(debug=True)
