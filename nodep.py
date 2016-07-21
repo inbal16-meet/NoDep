@@ -8,15 +8,34 @@ def HomePage():
 	return render_template("HomePage.html")
 
 
-@app.route('/signup')
-def signup():
+@app.route('/sign_up_page')
+def sign_up_page():
 	return render_template("sign_up_page.html")
 	
 
-@app.route('/aboutus')
-def aboutus():
+@app.route('/AboutUs')
+def AboutUs():
 	return render_template("AboutUs.html")
 
+@app.route('/submit')
+def submit():
+	return render_template("submit.html")
+
+@app.route('/log_in')
+def log_in():
+	return render_template("log_in.html")
+
+@app.route('/stories')
+def stories():
+	return render_template("stories.html")
+
+@app.route('/AddAComment')
+def AddAComment():
+	return render_template("AddAComment.html")
+
+@app.route('/SeeComment')
+def SeeComment():
+	return render_template("SeeComment.html")
 
 
 if __name__ == '__main__':
