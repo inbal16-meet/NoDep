@@ -5,24 +5,24 @@ app = Flask(__name__)
 
 #Homepage
 @app.route('/')
-def homepage():
+def HomePage():
 	
 	return 'Hi' 
-	#return render_template(#here we put the homepage.html)
+	return render_template('HomePage.html')
 
 #signup page
 
-@app.route('/about')
-def about():
-	return 'about'
-	#return render_template(#here we put about.html)
+@app.route('/AboutUs')
+def AboutUs():
+	return 'AboutUs'
+	return render_template('AboutUs.html')
 
 #signin page
 
-@app.route('/signin')
-def signin():
-	return 'signin'
-	#return render_template(#here we put signin.html)
+@app.route('/login')
+def login():
+	return 'login'
+	return render_template('login.html')
 
 #submit page
 
@@ -36,7 +36,7 @@ def submit():
 @app.route('/stories')
 def stories():
 	return 'stories'
-	#return render_template(#here we put stories)
+	return render_template('stories.html')
 
 
 #a single story page
